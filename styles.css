@@ -1,0 +1,45 @@
+body {
+    background-color:rgb(31, 31, 31);
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+#gameWindow {
+    position: relative;
+    display: grid;
+    height: 1024px;
+    width: 1024px;
+    border: 1px dashed white;
+    grid-template-columns: repeat(16, 64px);
+    grid-template-rows: repeat(16, 64px); 
+   
+}
+
+.bgSpriteChunk {
+    height: 64px;
+    width: 64px;
+    border: 1px dashed white;
+    background-color: #76A616;
+    
+}
+
+.bgSpriteChunk:hover {
+    background-color:#95bb48;
+}
+
+#playerChar {
+    position: absolute;
+    left: 512px;
+    top: 512px;
+
+    background-color: red;
+    z-index: 3;
+    height: 64px;
+    width: 64px;
+}
+
